@@ -42,7 +42,6 @@ header.fixed::before{
     filter: blur(4px);
     z-index: -1; 
 }
-
 .logo{
     width: 70px;
     height: 70px;
