@@ -9,7 +9,7 @@
 }
 body{
     /* background: linear-gradient(245.59deg, #fff 0%, gray 100%); */
-    background: #fff;
+    background: linear-gradient(to left, #1f0135, #000000);
 }
 
 header{
@@ -38,7 +38,7 @@ header.fixed::before{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(245.59deg, rgba(243, 234, 234, 0.84) 0%, rgb(234, 234, 234) 100%);
+    background: linear-gradient(to left, #1f0135, #000000);
     filter: blur(4px);
     z-index: -1; 
 }
@@ -46,7 +46,7 @@ header.fixed::before{
 .logo{
     width: 70px;
     height: 70px;
-    background: url(../images/logo.png) no-repeat center;
+    background: url(../images/JIFFY-01.png) no-repeat center;
     background-size: cover;
 }
 
@@ -57,7 +57,7 @@ header.fixed::before{
 }
 
 .navlist a{
-    color: red;
+    color: rgb(250, 250, 250);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
@@ -70,7 +70,7 @@ header.fixed::before{
 }
 
 #menu-icon{
-    color: red;
+    color: rgb(0, 8, 85);
     font-size: 30px;
     display: none;
     z-index: 10001;
@@ -78,7 +78,7 @@ header.fixed::before{
 }
 
 span{
-    color: #263238;
+    color: #f8f8f8;
 }
 
 .hero{
@@ -105,7 +105,7 @@ section{
 }
 
 .hero-text{
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 40px;
@@ -119,6 +119,10 @@ section{
     letter-spacing: 9px;
 }
 
+.hero-text h1 span{
+    color: #53038b;
+}
+
 .hero-text h4{
     font-size: 20px;
     font-weight: 500;
@@ -130,7 +134,7 @@ section{
 .hero-text h5{
     margin-bottom: 1rem;
     color: #fff;
-    background: red;
+    background: rgb(37, 3, 100);
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
@@ -144,24 +148,24 @@ section{
 
 .hero-text a{
     display: inline-block;
-    color: red;
+    color: white;
     font-size: 15px;
     font-weight: 500;
     padding: 10px 20px;
-    border: 2px solid red;
+    border: 2px solid rgb(68, 0, 255);
     border-radius: 15px;
     transition: all 0.60s ease;
 }
-
+/* red; */
 .hero-text a:hover{
-    background: red;
+    background: rgb(68, 0, 255);
     color: #fff;
     transform: translateX(10px);
 }
 
 .hero-text a.ctaa{
     background: transparent;
-    border: 1px solid red;
+    border: 1px solid rgb(68, 0, 255);
     margin-left: 20px;
 }
 
@@ -259,7 +263,7 @@ input:focus{
 }
 
 button{
-    background: red;
+    background: rgb(89, 0, 255);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -285,7 +289,7 @@ table {
     background-color: lightgray;
   }
   a{
-      color: red;
+      color: rgb(89, 0, 255);;
   }
   .form-box{
       height: auto;
@@ -308,11 +312,17 @@ table {
     align-items: center;
 }
 
-.card-body p{
+.card-body {
+    margin-top: 20px;
+    /* display: flex; */
+    
+}
+
+.card-body p, h5{
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 10px;
-    /* display: flex; */
+    color: white;
     
 }
 .about-text{
@@ -328,7 +338,7 @@ table {
     font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
-    color: red;
+    color: rgb(238, 238, 238);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -338,7 +348,7 @@ table {
     margin-bottom: 10px;
     display: flex;
     text-align: left;
-    color: red;
+    color: rgb(255, 255, 255);
 }
 .about h1{
     font-size: 2rem;
@@ -347,7 +357,7 @@ table {
     font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
-    color: red;
+    color: rgb(246, 246, 246);
     text-transform: uppercase;
     letter-spacing: 2px;
 
@@ -358,7 +368,7 @@ table {
     gap: 20px;
 }
 .about-card{
-    background: red;
+    background: rgb(240, 240, 240);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -371,7 +381,7 @@ table {
 }
 .about-card .card-icon{
     font-size: 30px;
-    color: #fff;
+    color: rgb(8, 8, 8);
     margin-bottom: 10px;
     display: grid;
     place-items: center;
@@ -422,7 +432,7 @@ table {
         transition: all 0.3s ease-in-out;
     }
     .navlist a{
-        color: red;
+        color: white;
         font-size: 20px;
         font-weight: 500;
         padding: 8px 15px;
@@ -456,7 +466,7 @@ table {
         background: none;
     }
     #menu-icon{
-        color: red;
+        color: rgb(35, 0, 92);
     }
     .about-list{
         grid-template-columns: repeat(1, 1fr);
@@ -472,7 +482,7 @@ table {
         font-size: 10px;
     }
     form input:focus{
-        border-color: red;
+        border-color: rgb(43, 0, 98);
     }
 
     @media screen and (max-width: 500px){
